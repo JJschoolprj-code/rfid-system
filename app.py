@@ -6,10 +6,10 @@ app = Flask(__name__)
 
 # 🔥 DATABASE CONFIG (CHANGE THESE)
 db = mysql.connector.connect(
-    host="YOUR_DB_HOST",
-    user="YOUR_DB_USER",
-    password="YOUR_DB_PASSWORD",
-    database="YOUR_DB_NAME"
+    host="sql112.infinityfree.com",
+    user="if0_41921723",
+    password="AWrnaWgZ1KlW",
+    database="if0_41921723_rfid_system"
 )
 
 @app.route("/rfid")
