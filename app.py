@@ -5,13 +5,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 # 🔥 RENDER DATABASE (PASTE YOUR DETAILS HERE)
-conn = psycopg2.connect(
-    host="YOUR_HOST",
-    database="YOUR_DATABASE",
-    user="YOUR_USER",
-    password="YOUR_PASSWORD",
-    port=5432
-)
+conn = psycopg2.connect("postgresql://rfid_db_177z_user:iyrgTsuBuXcrD5rnGoZLoL4RyfnrNMpr@dpg-d889f1km0tmc738hvr9g-a.oregon-postgres.render.com/rfid_db_177z")
 
 @app.route("/rfid")
 def rfid():
